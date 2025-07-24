@@ -3,6 +3,10 @@ from pika.adapters.blocking_connection import BlockingChannel
 from pika import BlockingConnection
 import logging
 
+# This script receives messages from a RabbitMQ queue named 'hello'.
+# It uses the pika library to connect to RabbitMQ, declare the queue, and consume messages.
+# It also sets up basic logging to track the message receiving process.
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def main():
